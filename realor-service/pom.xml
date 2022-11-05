@@ -9,12 +9,6 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-<!--    <parent>-->
-<!--        <groupId>org.springframework.boot</groupId>-->
-<!--        <artifactId>spring-boot-starter-parent</artifactId>-->
-<!--        <version>2.7.5</version>-->
-<!--        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
-<!--    </parent>-->
     <groupId>com.startUp</groupId>
     <artifactId>realtor-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -28,6 +22,12 @@
         <dependency>
             <groupId>com.startup.realtor</groupId>
             <artifactId>sync-dto</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.startup.realtor</groupId>
+            <artifactId>common-service</artifactId>
             <version>${revision}</version>
         </dependency>
 
@@ -74,10 +74,15 @@
         </dependency>
 
         <dependency>
-            <groupId>org.flywaydb</groupId>
-            <artifactId>flyway-core</artifactId>
-            <version>9.6.0</version>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.5</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.flywaydb</groupId>-->
+<!--            <artifactId>flyway-core</artifactId>-->
+<!--            <version>9.6.0</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.mapstruct</groupId>

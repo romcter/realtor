@@ -14,4 +14,5 @@ import org.mapstruct.NullValuePropertyMappingStrategy;
 public interface RealtorMapper {
 
     Realtor dtoToEntity(RealtorDto realtorDto);
+    RealtorDto entityToDto(Realtor realtorDto);
 }
