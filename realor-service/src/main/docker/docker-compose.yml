@@ -9,14 +9,13 @@ services:
     depends_on:
       - db
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/compose-postgres
-      - SPRING_DATASOURCE_USERNAME=compose-postgres
-      - SPRING_DATASOURCE_PASSWORD=compose-postgres
-      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/realtor
+      - SPRING_DATASOURCE_USERNAME=realtor
+      - SPRING_DATASOURCE_PASSWORD=realtor
 
   db:
-    image: 'postgres:13.1-alpine'
+    image: 'postgres:9.5'
     container_name: db
     environment:
-      - POSTGRES_USER=compose-postgres
-      - POSTGRES_PASSWORD=compose-postgres
+      - POSTGRES_USER=realtor
+      - POSTGRES_PASSWORD=realtor
