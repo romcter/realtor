@@ -1,4 +1,4 @@
-package com.startup.realtor.enums;
+package com.startup.syncdto.enums;
 
 public enum AuthorityEnum {
 

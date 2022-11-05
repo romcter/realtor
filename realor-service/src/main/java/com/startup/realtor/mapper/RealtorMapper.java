@@ -2,8 +2,8 @@ package com.startup.realtor.mapper;
 
 import com.startup.realtor.entity.Company;
 import com.startup.realtor.entity.Realtor;
-import com.startup.realtor.enums.AuthorityEnum;
-import com.startup.syncdto.order.RealtorDto;
+import com.startup.syncdto.enums.AuthorityEnum;
+import com.startup.syncdto.realtor.RealtorDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.NullValuePropertyMappingStrategy;
 

@@ -1,14 +1,12 @@
 package com.startup.realtor.entity;
 
-import com.startup.realtor.enums.AuthorityEnum;
-import lombok.Builder;
+import com.startup.syncdto.enums.AuthorityEnum;
 import lombok.Data;
 
 import javax.persistence.*;
 
-@Entity
 @Data
-@Builder
+@Entity
 public class Realtor {
 
     @Id

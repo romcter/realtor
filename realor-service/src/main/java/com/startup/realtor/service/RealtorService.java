@@ -3,7 +3,7 @@ package com.startup.realtor.service;
 import com.startup.realtor.NotFoundException;
 import com.startup.realtor.mapper.RealtorMapper;
 import com.startup.realtor.repository.RealtorRepository;
-import com.startup.syncdto.order.RealtorDto;
+import com.startup.syncdto.realtor.RealtorDto;
 import org.springframework.stereotype.Service;
 
 import static com.startup.realtor.config.IntegrationConstraint.REALTOR_NOT_FOUND;
