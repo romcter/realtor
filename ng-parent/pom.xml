@@ -15,5 +15,6 @@
 
   <properties>
     <revision>0.0.1-SNAPSHOT</revision>
+    <flyway.version>9.6.0</flyway.version>
   </properties>
 </project>

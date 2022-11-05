@@ -17,7 +17,6 @@ public class Realtor {
     private String LastName;
 
     @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "country_id", nullable = false)
     private Company company;
 
     @Enumerated(EnumType.STRING)

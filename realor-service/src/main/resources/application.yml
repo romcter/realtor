@@ -1,0 +1,19 @@
+spring:
+
+  datasource:
+    url: jdbc:postgresql://0.0.0.0:5432/realtor
+    username: realtor
+    password: realtor
+
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+
+  flyway:
+    user: realtor
+    password: realtor
+    schemas: realtor

@@ -78,11 +78,11 @@
             <artifactId>postgresql</artifactId>
             <version>42.2.5</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.flywaydb</groupId>-->
-<!--            <artifactId>flyway-core</artifactId>-->
-<!--            <version>9.6.0</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>${flyway.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.mapstruct</groupId>

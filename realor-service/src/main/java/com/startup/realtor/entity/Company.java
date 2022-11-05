@@ -1,16 +1,17 @@
 package com.startup.realtor.entity;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
+@Data
 @Entity
 public class Company {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
 
-    @JoinColumn
     @ManyToOne
     private Realtor realtor;
 }
