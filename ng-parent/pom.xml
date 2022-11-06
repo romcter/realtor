@@ -14,7 +14,12 @@
   </parent>
 
   <properties>
+
+    <sonar.organization>romcter</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+
     <revision>0.0.1-SNAPSHOT</revision>
     <flyway.version>9.6.0</flyway.version>
+
   </properties>
 </project>
