@@ -1,17 +1,16 @@
 package com.startup.realtor.entity;
 
 import com.startup.syncdto.enums.AuthorityEnum;
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 
-@Data
 @Entity
-public class Realtor {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class Realtor extends AbstractBaseEntity {
 
     private String name;
     private String LastName;
@@ -21,8 +20,4 @@ public class Realtor {
 
     @Enumerated(EnumType.STRING)
     private AuthorityEnum authorityRole;
-
-    public Realtor() {
-
-    }
 }

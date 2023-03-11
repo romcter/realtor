@@ -1,0 +1,12 @@
+services:
+  realtor-service:
+    url: ${:http://localhost:8065/pathway-service}
+
+spring:
+  logging:
+    level:
+      com:
+        baeldung:
+          cloud:
+            openfeign:
+              client: DEBUG

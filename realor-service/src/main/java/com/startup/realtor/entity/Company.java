@@ -1,16 +1,15 @@
 package com.startup.realtor.entity;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 
-@Data
 @Entity
-public class Company {
-
-    @Id
-    private Long id;
-    private String name;
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class Company extends AbstractBaseEntity {
 
     @ManyToOne
     private Realtor realtor;

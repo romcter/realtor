@@ -18,5 +18,5 @@ public class Address {
     private City city;
 
     @OneToOne
-    private BaseOrder baseOrder;
+    private Order order;
 }
