@@ -1,5 +1,6 @@
 package com.startup.realtor.entity;
 
+import com.startup.syncdto.enums.advertisement.AdvertisementTypeEnum;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,10 +14,12 @@ import javax.persistence.OneToOne;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-public class Order extends AbstractBaseEntity {
+public class Advertisement extends AbstractBaseEntity {
 
     private String description;
 
     @OneToOne
     private Address address;
+
+    private AdvertisementTypeEnum advertisementType;
 }

@@ -9,4 +9,4 @@ spring:
         baeldung:
           cloud:
             openfeign:
-              client: DEBUG
+              client: DEBUGlk
