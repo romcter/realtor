@@ -1,22 +1,25 @@
 package com.startup.realtor.entity;
 
 import com.startup.syncdto.enums.City;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
-@Data
 @Entity
-public class Address {
+@Data
+@NoArgsConstructor
+@Builder
+@AllArgsConstructor
+public class Address extends AbstractBaseEntity {
 
-    @Id
-    private Long id;
     private String street;
     private Long numberHouse;
     private City city;
 
-    @OneToOne
-    private Order order;
+    @OneToOne(mappedBy = "address")
+    private Apartment apartment;
 }

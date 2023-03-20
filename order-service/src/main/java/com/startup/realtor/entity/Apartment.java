@@ -14,13 +14,17 @@ import javax.persistence.OneToOne;
 @NoArgsConstructor
 @Builder
 @AllArgsConstructor
-public class Order extends AbstractBaseEntity {
+public class Apartment extends AbstractBaseEntity {
 
-    private String description;
     private Integer price;
+    private Integer floor;
+    private Integer rooms;
 
     @OneToOne
-    @JoinColumn(name = "apartment_id")
-    private Apartment apartment;
+    @JoinColumn(name = "adress_id")
+    private Address address;
+
+    @OneToOne(mappedBy = "apartment")
+    private Order order;
 
 }

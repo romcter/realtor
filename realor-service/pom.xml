@@ -22,13 +22,13 @@
         <dependency>
             <groupId>com.startup.realtor</groupId>
             <artifactId>sync-dto</artifactId>
-            <version>${revision}</version>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
             <groupId>com.startup.realtor</groupId>
             <artifactId>common-service</artifactId>
-            <version>${revision}</version>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
